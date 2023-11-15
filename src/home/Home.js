@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { nowPlaying } from "../api";
-import styled from "styled-components";
+import { Banners } from "./Banners";
 
-const MainBanners = styled.div``;
+
 
 export const Home = () => {
   const [nowPlayingData, setNowPlayingData] = useState();
@@ -30,10 +30,7 @@ export const Home = () => {
       ) : (
         <>
           {nowPlayingData && (
-            <MainBanners>
-              <h3>{nowPlayingData[0].title}</h3>
-              <p>{nowPlayingData[0].overview}</p>
-            </MainBanners>
+            <Banners data = {nowPlayingData[0]}/>
           )}
         </>
       )}

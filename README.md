@@ -13,4 +13,4 @@
 - [x] components, page 만들기
 - [x] 초기화 설정
 - [x] api 설정
-- [] api data 가져오기
+- [x] api data 가져오기
